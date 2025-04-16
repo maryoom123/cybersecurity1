@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة التحكم</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .dashboard-container {
+      padding: 30px;
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .dashboard-container h1 {
+      color: #1a73e8;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .dashboard-container .menu {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .dashboard-container .menu div {
+      width: 48%;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .dashboard-container .menu div h2 {
+      color: #1a73e8;
+      margin-bottom: 20px;
+    }
+
+    .dashboard-container .menu div p {
+      color: #555;
+      font-size: 18px;
+    }
+
+    .dashboard-container .logout-button {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .dashboard-container .logout-button a {
+      padding: 12px 30px;
+      background-color: #e91e63;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .dashboard-container .logout-button a:hover {
+      background-color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🔐 أكاديمية الأمن السيبراني</header>
+
+  <div class="dashboard-container">
+    <h1>مرحبًا بك في لوحة التحكم</h1>
+    
+    <div class="menu">
+      <div>
+        <h2>الدروس المتاحة</h2>
+        <p>ابدأ بتعلم الأساسيات وحماية نفسك من التهديدات.</p>
+        <a href="courses.html">انتقل للدروس</a>
+      </div>
+      <div>
+        <h2>اختبارات تفاعلية</h2>
+        <p>اختبر معلوماتك بعد كل درس وتحقق من تقدمك.</p>
+        <a href="tests.html">انتقل للاختبارات</a>
+      </div>
+    </div>
+
+    <div class="logout-button">
+      <a href="login.html">تسجيل الخروج</a>
+    </div>
+  </div>
+
+  <footer>© 2025 أكاديمية الأمن السيبراني. جميع الحقوق محفوظة.</footer>
+
+</body>
+</html>

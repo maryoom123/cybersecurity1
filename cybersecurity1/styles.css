@@ -1,0 +1,75 @@
+/* الخط الأساسي */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(to right, #f7f9fc, #edf1f7);
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  color: #333;
+}
+
+/* رأس الصفحة */
+header {
+  background-color: #1a73e8;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-size: 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* حاوية المحتوى */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* العناوين */
+h1 {
+  color: #1a73e8;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+h2 {
+  color: #555;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+/* النصوص */
+p, ul {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+ul {
+  padding-right: 20px;
+}
+
+/* المدخلات والأزرار */
+input, button {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #155
+
