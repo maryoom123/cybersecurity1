@@ -5,13 +5,29 @@
   <title>أكاديمية الأمن السيبراني</title>
   <link rel="stylesheet" href="styles.css">
   <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+      background-color: #f7f9fc;
+    }
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
     .hero {
-  background: url('images/cyber-bg.jpg') center/cover no-repeat;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-  position: relative
-   }
+      background: url('images/cyber-bg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
 
     .hero h1 {
       font-size: 48px;
@@ -32,10 +48,31 @@
       border: none;
       font-weight: bold;
       transition: 0.3s;
+      cursor: pointer;
     }
 
     .hero a button:hover {
       background-color: #e6f0ff;
+    }
+
+    .intro-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+      background-color: #ffffff;
+    }
+
+    .intro-section div {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .intro-section img {
+      max-width: 100%;
+      border-radius: 20px;
     }
 
     .features {
@@ -62,25 +99,38 @@
       font-size: 16px;
       color: #555;
     }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      color: #777;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
 
   <header>🔐 أكاديمية الأمن السيبراني</header>
 
-  <section class="hero" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 300px; padding: 20px;">
-    <h1>مرحبًا بك في أكاديمية الأمن السيبراني</h1>
-    <p>تعلم أساسيات الحماية الرقمية من خلال دروس تفاعلية واختبارات واقعية</p>
-    <a href="login.html">
-      <button>ابدأ الآن</button>
-      <a href="about.html">من نحن</a>
+  <div class="hero">
+    <h1>مرحباً بكم في أكاديمية الأمن السيبراني</h1>
+    <p>ابدأ رحلتك معنا وتعلم حماية نفسك ومعلوماتك.</p>
+    <a href="courses.html"><button>ابدأ الآن</button></a>
   </div>
-  <div style="flex: 1; min-width: 300px;">
-    <img src="images/cyber-bg" alt="صورة الأمن السيبراني" style="max-width: 100%; border-radius: 20px;">
-  </div>
-</section>
 
+  <section class="intro-section">
+    <div>
+      <h1>مرحبًا بك في أكاديمية الأمن السيبراني</h1>
+      <p>تعلم أساسيات الحماية الرقمية من خلال دروس تفاعلية واختبارات واقعية.</p>
+      <a href="login.html"><button>ابدأ الآن</button></a>
+      <br><br>
+      <a href="about.html">من نحن</a>
+    </div>
+    <div>
+      <img src="images/cyber-bg.jpg" alt="صورة الأمن السيبراني">
+    </div>
+  </section>
 
   <section class="features">
     <div class="feature-card">
