@@ -1,39 +1,104 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>تسجيل الدخول</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تسجيل الدخول – أكاديمية الأمن السيبراني</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background-color: #1a73e8;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: 60px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .login-container h1 {
+      text-align: center;
+      color: #1a73e8;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+    .login-container label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .login-container input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    .login-container .btn {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color .3s;
+    }
+    .login-container .btn:hover {
+      background-color: #155ab6;
+    }
+    .login-container .links {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .login-container .links a {
+      color: #1a73e8;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    .login-container .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>تسجيل الدخول</h1>
-    <form onsubmit="login(event)">
-      <input type="text" id="username" placeholder="اسم المستخدم أو الإيميل" required><br>
-      <input type="password" id="password" placeholder="كلمة المرور" required><br>
-      <button type="submit">دخول</button>
-    </form>
-    <p>ما عندك حساب؟ <a href="signup.html">سجّل الآن</a></p>
-    
-    <form action="dashboard.html" method="POST">
-  <button type="submit">تسجيل الدخول</button>
-</form>
 
+  <header>🔐 أكاديمية الأمن السيبراني</header>
+
+  <div class="login-container">
+    <h1>تسجيل الدخول</h1>
+    <form action="dashboard.html" method="POST">
+      <label for="username">البريد الإلكتروني أو اسم المستخدم</label>
+      <input type="text" id="username" name="username" placeholder="أدخل بريدك أو اسم المستخدم" required>
+
+      <label for="password">كلمة المرور</label>
+      <input type="password" id="password" name="password" placeholder="••••••••••" required>
+
+      <button type="submit" class="btn">دخول</button>
+    </form>
+    <div class="links">
+      <a href="signup.html">إنشاء حساب جديد</a> |
+      <a href="index.html">العودة للرئيسية</a>
+    </div>
   </div>
 
-  <script>
-    function login(e) {
-      e.preventDefault();
-      const user = document.getElementById("username").value;
-      const pass = document.getElementById("password").value;
-
-      if (user && pass) {
-        localStorage.setItem("username", user);
-        window.location.href = "dashboard.html";
-      } else {
-        alert("يرجى تعبئة جميع الحقول");
-      }
-    }
-  </script>
 </body>
 </html>
+

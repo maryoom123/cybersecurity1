@@ -1,76 +1,65 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>أكاديمية الأمن السيبراني</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     body {
+      font-family: 'Arial', sans-serif;
       margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background-color: #f4f6f9;
+      padding: 0;
+      direction: rtl;
+      background-color: #f5f7fa;
     }
 
     header {
       background-color: #1a73e8;
       color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-    }
-
-    header h1 {
-      margin: 0;
+      text-align: center;
+      padding: 15px;
       font-size: 24px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
       font-weight: bold;
     }
 
     .hero {
       background: url('images/cyber-bg.jpg') center/cover no-repeat;
       color: white;
-      padding: 120px 20px;
+      padding: 100px 20px;
       text-align: center;
     }
 
-    .hero h2 {
+    .hero h1 {
       font-size: 48px;
       margin-bottom: 20px;
     }
 
     .hero p {
       font-size: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
-    .hero a button {
+    .hero .btn {
       font-size: 18px;
-      padding: 12px 30px;
-      border-radius: 25px;
+      padding: 15px 30px;
+      border-radius: 30px;
       background-color: #fff;
       color: #1a73e8;
       border: none;
       font-weight: bold;
-      cursor: pointer;
       transition: 0.3s;
+      text-decoration: none;
     }
 
-    .hero a button:hover {
+    .hero .btn:hover {
       background-color: #e6f0ff;
     }
 
     .features {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      padding: 60px 20px;
+      gap: 20px;
+      padding: 40px;
       text-align: center;
     }
 
@@ -92,58 +81,42 @@
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
       background-color: #1a73e8;
       color: white;
-    }
-
-    @media (max-width: 600px) {
-      .hero h2 {
-        font-size: 32px;
-      }
-      .hero p {
-        font-size: 18px;
-      }
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>🔐 أكاديمية الأمن السيبراني</h1>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="courses.html">الدورات</a>
-      <a href="about.html">من نحن</a>
-      <a href="login.html">تسجيل الدخول</a>
-    </nav>
-  </header>
+  <header>🔐 أكاديمية الأمن السيبراني</header>
 
-  <div class="hero">
-    <h2>أهلاً بك في عالم الحماية السيبرانية</h2>
-    <p>ابدأ رحلتك التعليمية وتعلم كيف تحمي نفسك ومعلوماتك من التهديدات الرقمية</p>
-    <a href="courses.html"><button>ابدأ التعلم</button></a>
-  </div>
+  <section class="hero">
+    <h1>مرحباً بكم في أكاديمية الأمن السيبراني</h1>
+    <p>ابدأ رحلتك معنا وتعلم حماية نفسك ومعلوماتك.</p>
+    <a class="btn" href="courses.html">ابدأ الآن</a>
+    <a class="btn" href="about.html" style="margin-right: 10px;">من نحن</a>
+  </section>
 
   <section class="features">
     <div class="feature-card">
-      <h3>📘 دروس تعليمية</h3>
-      <p>تعلم أساسيات الأمن السيبراني بطريقة مبسطة وسهلة.</p>
+      <h3>📚 دروس تعليمية</h3>
+      <p>محتوى مبسّط ومباشر لفهم مفاهيم الحماية السيبرانية.</p>
     </div>
     <div class="feature-card">
-      <h3>🧠 اختبارات تفاعلية</h3>
-      <p>اختبر معرفتك بعد كل درس وتابع تقدمك لحظة بلحظة.</p>
+      <h3>🧠 اختبارات قصيرة</h3>
+      <p>اختبر معلوماتك بعد كل درس وتابع تقدمك.</p>
     </div>
     <div class="feature-card">
-      <h3>🔒 حماية البيانات</h3>
-      <p>تعرف على طرق حماية حساباتك وكلمات مرورك بذكاء.</p>
+      <h3>🛡️ حماية نفسك</h3>
+      <p>تعلّم كيف تحمي بياناتك وتبقى آمنًا على الإنترنت.</p>
     </div>
   </section>
 
-  <footer>
-    © 2025 أكاديمية الأمن السيبراني. جميع الحقوق محفوظة.
-  </footer>
+  <footer>© 2025 أكاديمية الأمن السيبراني. جميع الحقوق محفوظة.</footer>
 
 </body>
 </html>
+
